@@ -1,4 +1,4 @@
-export const getKey = (params) => {
+const getKey = (params) => {
 	const today = new Date()
 	/**
 	 * @param {number} h hour of day to convert
@@ -18,8 +18,11 @@ export const getKey = (params) => {
 	return `${today.getFullYear()}/${today.getMonth()}/${today.getDay()}/${dayStage}:${params.query}`;
 }
 
-export const lowerCase = (str) => {
+const lowerCase = (str) => {
 	if (typeof str === 'string')
 		return str.toLocaleLowerCase()
 	return str
 }
+
+module.exports.getKey = getKey
+module.exports.lowerCase = lowerCase
