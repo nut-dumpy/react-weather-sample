@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn dev`
+
+Starts app in development mode together with bundeled express server for caching and retrieving weather data.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
