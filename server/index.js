@@ -1,9 +1,13 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const axios = require('axios')
 const Cache = require('./Cache')
 const { getKey, lowerCase } = require('./util')
 
+const access_key = process.env.ACCESS_KEY
+if (!access_key)
+	throw new Error('You need to acquire weatherstack API key to get weather data http://api.weatherstack.com');
 const port = +process.env.PORT || 3001
 
 const cache = new Cache()
@@ -18,7 +22,7 @@ app.use(cors(corsOptions))
 app.get('/weather', async (req, res) => {
 	const { units, query } = req.query
 	const params = {
-		access_key: '677c5eee3cdab8f6a9f443157461708f',
+		access_key,
 		query: lowerCase(query),
 		units: units || 'm'
 	}

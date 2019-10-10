@@ -24,3 +24,6 @@ yarn-error.log*
 
 # tmp
 cache.json
+
+# env settings
+.env
