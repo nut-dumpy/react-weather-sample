@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements
+
+You need weatherstack API key to retrieve weather data, other providers aren't yet supported and there are no plans for that.
+[Get an API key](https://weatherstack.com/dashboard).
+After acquiring API key you need to (create .env file in server directory and) set `ACCESS_KEY` env variable.
+
 ## Available Scripts
 
 In the project directory, you can run:
