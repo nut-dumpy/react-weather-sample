@@ -6,6 +6,10 @@ class Cache {
 		const adapter = new FileSync('cache.json')
 		const db = low(adapter)
 		db.defaults({ storage: [] }).write()
+
+		const now = Date.now()
+		db.get('storage').remove((entry) => entry.stored < now - 36 * 36e5).write()
+
 		this.db = db
 	}
 	async request(key, grabber) {
