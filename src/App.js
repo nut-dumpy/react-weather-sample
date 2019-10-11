@@ -26,6 +26,7 @@ function App() {
 				'Content-Type': 'application/json'
 			},
 		}).then(a => a.json())
+
 		grabData()
 			.then(data => {
 				if (data.success === false)
@@ -48,8 +49,8 @@ function App() {
 					defaultValue={city}
 				/>
 			</h3>
-			{ actualCity && <p>Commonly known as { actualCity }</p>}
-			<p>Right now it's kinda { weather }</p>
+			{ actualCity && <p className="actual-city">Commonly known as { actualCity }</p>}
+			<p className="weather-now">Right now it's kinda { weather }</p>
 			<p><img className="icon" src={iconset.src} alt={iconset.alt}/></p>
     </div>
   );

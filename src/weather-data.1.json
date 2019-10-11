@@ -1,0 +1,43 @@
+{
+	"key": "2019/9/4/3:Belarus, hrodn",
+	"stored": 1570694484001,
+	"request": {
+		"type": "City",
+		"query": "Minsk, Belarus",
+		"language": "en",
+		"unit": "m"
+	},
+	"location": {
+		"name": "Minsk",
+		"country": "Belarus",
+		"region": "Minsk",
+		"lat": "53.900",
+		"lon": "27.567",
+		"timezone_id": "Europe/Minsk",
+		"localtime": "2019-10-10 10:58",
+		"localtime_epoch": 1570705080,
+		"utc_offset": "3.0"
+	},
+	"current": {
+		"observation_time": "07:58 AM",
+		"temperature": 9,
+		"weather_code": 296,
+		"weather_icons": [
+			"https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0017_cloudy_with_light_rain.png"
+		],
+		"weather_descriptions": [
+			"Light Rain"
+		],
+		"wind_speed": 0,
+		"wind_degree": 140,
+		"wind_dir": "SE",
+		"pressure": 1002,
+		"precip": 2.8,
+		"humidity": 100,
+		"cloudcover": 75,
+		"feelslike": 9,
+		"uv_index": 2,
+		"visibility": 9,
+		"is_day": "yes"
+	}
+}

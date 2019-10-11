@@ -1,0 +1,43 @@
+{
+	"key": "2019/9/4/3:Belarus, hrodna",
+	"stored": 1570694483766,
+	"request": {
+		"type": "City",
+		"query": "Hrodna, Belarus",
+		"language": "en",
+		"unit": "m"
+	},
+	"location": {
+		"name": "Hrodna",
+		"country": "Belarus",
+		"region": "Hrodzyenskaya Voblasts'",
+		"lat": "53.681",
+		"lon": "23.815",
+		"timezone_id": "Europe/Minsk",
+		"localtime": "2019-10-10 10:56",
+		"localtime_epoch": 1570704960,
+		"utc_offset": "3.0"
+	},
+	"current": {
+		"observation_time": "07:56 AM",
+		"temperature": 9,
+		"weather_code": 296,
+		"weather_icons": [
+			"https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0017_cloudy_with_light_rain.png"
+		],
+		"weather_descriptions": [
+			"Light Rain"
+		],
+		"wind_speed": 7,
+		"wind_degree": 210,
+		"wind_dir": "SSW",
+		"pressure": 1003,
+		"precip": 4.8,
+		"humidity": 93,
+		"cloudcover": 100,
+		"feelslike": 8,
+		"uv_index": 2,
+		"visibility": 6,
+		"is_day": "yes"
+	}
+}
