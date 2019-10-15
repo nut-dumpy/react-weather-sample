@@ -4,9 +4,6 @@ import { act } from "react-dom/test-utils";
 import App from './App';
 import { fireEvent } from '@testing-library/dom'
 
-import axios from 'axios'
-// jest.mock('react')
-
 let container
 
 beforeEach(() => {
